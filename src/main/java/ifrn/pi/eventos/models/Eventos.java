@@ -65,4 +65,12 @@ public class Eventos {
 		this.descricao = descricao;
 	}
 
+	@Override
+	public String toString() {
+		return "Eventos [id=" + id + ", nome=" + nome + ", lugar=" + lugar + ", data=" + data + ", horario=" + horario
+				+ ", descricao=" + descricao + "]";
+	}
+	
+	
+
 }
