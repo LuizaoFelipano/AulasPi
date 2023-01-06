@@ -12,7 +12,7 @@ public class Eventos {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	private String lugar;
+	private String local;
 	private String data;
 	private String horario;
 	private String descricao;
@@ -33,12 +33,12 @@ public class Eventos {
 		this.nome = nome;
 	}
 
-	public String getLugar() {
-		return lugar;
+	public String getLocal() {
+		return local;
 	}
 
-	public void setLugar(String lugar) {
-		this.lugar = lugar;
+	public void setLocal(String local) {
+		this.local = local;
 	}
 
 	public String getData() {
@@ -67,10 +67,9 @@ public class Eventos {
 
 	@Override
 	public String toString() {
-		return "Eventos [id=" + id + ", nome=" + nome + ", lugar=" + lugar + ", data=" + data + ", horario=" + horario
+		return "Eventos [id=" + id + ", nome=" + nome + ", local=" + local + ", data=" + data + ", horario=" + horario
 				+ ", descricao=" + descricao + "]";
 	}
-	
-	
 
+	
 }
